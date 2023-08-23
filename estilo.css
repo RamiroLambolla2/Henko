@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+} 
+
+header{
+    height: 80px;
+    background-color: cornflowerblue;
+    padding: 20px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nombre-detienda{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+.barra{
+    float: right;
+}
+
+.barra ul{
+    list-style: none;
+    letter-spacing: 10px;
+}
+
+.barra ul li{
+    display: inline-block;
+}
+
+.barra a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.barra :hover{
+    color: white;
+
+}
+main{
+    background-color: burlywood;
+    background-image: url(./Multimedia/skateboard.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.bienvenida{
+    width: 70%;
+    border: thin cornflowerblue;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.bienvenida p{
+    margin-bottom: 20px;
+}
+
+.bienvenida a{
+    background-color:cornflowerblue ;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius:5px ;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.redes{
+    color: cornflowerblue;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Conocenos */
+
+.info-henko{
+    color: black;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.somos{
+    font-size: 60px;
+    color:cornflowerblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+picture img{
+    height: 400px;
+    width: auto;
+    margin-left: 50px;
+}
+
+.parrafo2{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+}
+
+/* info&ayuda */
+
+h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#metodos-de-pagos{
+    font-weight: bold;color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: underline;color: white;
+}
+
+#parrafo-1{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#parrafo-2{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+#parrafo-3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+#parrafo-4{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.parrafosdecambio{
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+/* Galeria */
+
+.galeria-henko{
+    background-color: #000;
+    color: white;
+}
+
+.galerias{
+    font-size: 40px;
+}
+
+.henkos{
+    color: cornflowerblue;
+}
+
+.galeria{
+    display: grid;
+    /* height: 600px; */
+    width: 100%;
+    background-color: cornflowerblue;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas:  "img1 img2 img3 img3"
+                         "img1 img4 img5 img6"
+                         "img7 img4 img8 img8";
+    grid-gap: 15px;
+    padding: 15px;        
+}
+
+
+.item{
+    border: 2px solid #000;
+    border-radius: 15px;
+    filter: grayscale(100%);
+    transition: all 0.9s;
+}
+
+.item:hover{
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+.item1{
+    background-image: url(./multimedia/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img1;
+}
+
+.item2{
+    background-image: url(./multimedia/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img2;
+}
+
+.item3{
+    background-image: url(./multimedia/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img3;
+}
+
+.item4{
+    background-image: url(./multimedia/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img4;
+}
+
+.item5{
+    background-image: url(./multimedia/img5.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: img5;
+}
+
+.item6{
+    background-image: url(./multimedia/img6.webp);
+    background-size: cover;
+    background-position: center;
+    grid-area: img6;
+}
+
+.item7{
+    background-image: url(./multimedia/img7.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img7;
+}
+
+.item8{
+    background-image: url(./multimedia/img8.jpeg);
+    background-size: cover;
+    background-position: center;
+    grid-area: img8;
+}
+
+/* Productos */
+
+#img-productos1{
+    max-width: 100%;
+}
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item-producto{
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.item-producto:hover{
+    box-shadow: 0 16px 20px rgba(0, 0, 0, 0.20);
+}
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+             
+}
+
+.item-producto #imgproductos1{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
